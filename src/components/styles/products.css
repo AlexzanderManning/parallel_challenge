@@ -1,0 +1,46 @@
+/* WRITE YOUR CSS HERE */
+/* I was unsure if the instructions wanted a 2 coulumn row for mobile and desktop or a single column for mobile that scales to a 2 column layout for desktop so I just provided both soluions just incase. */
+
+/* SOLUTION 1 -- Dual column layout on mobile and desktop   */
+ .productBlock__img{
+   margin: 0 auto;
+ }
+
+ .productLayout{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.productLayout__products{
+  flex: 1 1 40%;
+  margin: 1rem .5rem;
+}
+
+
+
+
+
+/* SOLUTION--2 Single column layout for mobile and dual column layout for tablet and desktop */
+
+ /* The default styling was already functional for mobile devices with a little tweaking. So in this instance, I thought it best and more succinct to include a media query breakpoint for the tablet screen size (768px), instead of the normal 960px for desktop so that it scales well across all devices.  */
+
+
+ /* .productBlock__img{
+   margin: 0 auto;
+ }
+
+ .productLayout__products{
+  margin: 3rem .5rem;
+ }
+ 
+ @media(min-width:768px){
+   .productLayout{
+     display: flex;
+     flex-wrap: wrap;
+   }
+ 
+   .productLayout__products{
+    flex: 1 1 40%;
+    margin: 1rem .5rem;
+   }
+ } */
